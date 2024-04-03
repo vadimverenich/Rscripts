@@ -27,8 +27,8 @@ pc_ref <- pred2
 # Using the pcapred package for projection/predicting
 dat <- readbed("analysis")
 dat <- mergeref(dat, verbose = TRUE, mergeon = "CHRPOS")
-pred5 <- predictpcs(dat)
-pc_test <- pred5
+pred3 <- predictpcs(dat)
+pc_test <- pred3
 
 
 # Matching samples have already been defined as matched_ref and matched_test
