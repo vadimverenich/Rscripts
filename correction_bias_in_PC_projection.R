@@ -8,7 +8,10 @@ if (!require(vegan)) install.packages("vegan")
 library(vegan)
 
 # Read the analysis file
+
 read.table("analysis.fam", header=FALSE) -> analysis
+read.table("westeuras.fam", header=FALSE) -> westeuras
+read.table("euromerged.fam", header=FALSE) -> euromerged
 
 # Identify common samples between analysis and reference data
 common_samples <- intersect(analysis[,2], euromerged[,2])
